@@ -4,6 +4,7 @@ using Dsw2026Ej8.Problema1;
 using Dsw2026Ej8.Ejercicio2;
 using Dsw2026Ej8.Ejercicio3;
 using Dsw2026Ej8.Ejercicio4;
+using Dsw2026Ej8.Ejercicio5;
 
 namespace Dsw2026Ej8
 {
@@ -58,6 +59,20 @@ namespace Dsw2026Ej8
 
             Console.WriteLine("\nEjercicio 4: Promedio");
             Console.WriteLine($"El promedio es: {promedio:F2}");
+
+            //------------- Problema 5 -------------
+
+            Problema5 problema5 = new Problema5();
+
+            Sale ventaMin = new RetailSale { Importe = 1000m };
+            decimal totalRetail = problema5.ObtenerImporteFinal(ventaMin);
+
+            Sale ventaMay = new WholesaleSale { Importe = 1000m };
+            decimal totalWholesale = problema5.ObtenerImporteFinal(ventaMay);
+
+            Console.WriteLine("\nEjercicio 5: Total");
+            Console.WriteLine($"Venta Minorista: {totalRetail:C}");
+            Console.WriteLine($"Venta Mayorista: {totalWholesale:C}");
 
             Console.WriteLine("\nPresione cualquier tecla para salir...");
             Console.ReadKey();
