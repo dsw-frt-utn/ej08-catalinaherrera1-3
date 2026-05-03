@@ -3,6 +3,7 @@ using Dsw2026Ej8;
 using Dsw2026Ej8.Problema1;
 using Dsw2026Ej8.Ejercicio2;
 using Dsw2026Ej8.Ejercicio3;
+using Dsw2026Ej8.Ejercicio4;
 
 namespace Dsw2026Ej8
 {
@@ -45,6 +46,18 @@ namespace Dsw2026Ej8
 
             Console.WriteLine("\nEjercicio 3: Descripción");
             Console.WriteLine(resultado);
+
+            //------------- Problema 4 -------------
+            Problema4 problema4 = new Problema4();
+
+            int? nota1 = 8;
+            int? nota2 = 8;
+            int? nota3 = 9;
+
+            double promedio = problema4.CalcularPromedio(nota1, nota2, nota3);
+
+            Console.WriteLine("\nEjercicio 4: Promedio");
+            Console.WriteLine($"El promedio es: {promedio:F2}");
 
             Console.WriteLine("\nPresione cualquier tecla para salir...");
             Console.ReadKey();
