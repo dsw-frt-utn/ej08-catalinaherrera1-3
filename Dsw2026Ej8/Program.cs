@@ -5,6 +5,7 @@ using Dsw2026Ej8.Ejercicio2;
 using Dsw2026Ej8.Ejercicio3;
 using Dsw2026Ej8.Ejercicio4;
 using Dsw2026Ej8.Ejercicio5;
+using Dsw2026Ej8.Ejercicio6;
 
 namespace Dsw2026Ej8
 {
@@ -73,6 +74,17 @@ namespace Dsw2026Ej8
             Console.WriteLine("\nEjercicio 5: Total");
             Console.WriteLine($"Venta Minorista: {totalRetail:C}");
             Console.WriteLine($"Venta Mayorista: {totalWholesale:C}");
+
+            //------------- Problema 6 -------------
+
+            Problema6 codigo = new Problema6();
+
+            string ejemplo1 = " ab 123 x";
+            string ejemplo2 = null;
+
+            Console.WriteLine("\nEjercicio 6: Conversión");
+            Console.WriteLine($"Original: {ejemplo1} - Conversión: {codigo.NormalizarCodigoProducto(ejemplo1)}");
+            Console.WriteLine($"Original: {ejemplo2} - Conversión: {codigo.NormalizarCodigoProducto(ejemplo2)}");
 
             Console.WriteLine("\nPresione cualquier tecla para salir...");
             Console.ReadKey();
