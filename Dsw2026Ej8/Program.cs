@@ -2,6 +2,7 @@
 using Dsw2026Ej8;
 using Dsw2026Ej8.Problema1;
 using Dsw2026Ej8.Ejercicio2;
+using Dsw2026Ej8.Ejercicio3;
 
 namespace Dsw2026Ej8
 {
@@ -34,7 +35,16 @@ namespace Dsw2026Ej8
             Console.WriteLine("\nEjercicio 2: Resumen");
             Console.WriteLine(resumen);
 
-            //------------ Problema 3 ------------
+            //-------------Problema 3-------------
+            Problema3 problema3 = new Problema3();
+
+            Product productoPrueba = new Product { Description = "Mouse Óptimo" };
+            int originalValue = 100;
+
+            string resultado = problema3.CompararCopias(originalValue, productoPrueba);
+
+            Console.WriteLine("\nEjercicio 3: Descripción");
+            Console.WriteLine(resultado);
 
             Console.WriteLine("\nPresione cualquier tecla para salir...");
             Console.ReadKey();
